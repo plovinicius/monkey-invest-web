@@ -40,7 +40,10 @@
           <td>
             {{ calcPercent(stock.value, stock.actualValue) | toPercent }}
           </td>
-          <td><edit-icon /><trash-icon /></td>
+          <td>
+            <edit-icon />
+            <delete-button><trash-icon /></delete-button>
+          </td>
         </tr>
       </table>
     </div>
@@ -49,9 +52,11 @@
 
 <script>
 import OrangeButton from '../../components/OrangeButton.vue';
+import DeleteButton from '../../components/DeleteButton.vue';
 import { RefreshIcon, TrashIcon, EditIcon } from 'vue-tabler-icons';
+
 export default {
-  components: { OrangeButton, RefreshIcon, TrashIcon, EditIcon },
+  components: { OrangeButton, DeleteButton, RefreshIcon, TrashIcon, EditIcon },
   data() {
     return {
       stocks: [],

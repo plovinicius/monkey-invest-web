@@ -16,6 +16,14 @@ export default {
 </script>
 
 <style>
+html {
+  background: radial-gradient(
+    123.22% 129.67% at 100.89% -5.6%,
+    #201d47 0%,
+    #201d47 100%
+  );
+}
+
 body {
   padding: 0;
   margin: 0;
